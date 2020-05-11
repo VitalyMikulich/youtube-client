@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:400,400i,500,500i&display=swap&subset=cyrillic');
+
+* {
+  font-family: 'Ubuntu', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(206, 198, 198);
+}
+
+.content {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  margin-top: 100px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  transition: 1s;
+}
+
+.searchBar-container {
+  text-align: center;
+  height: 2em;
+}
+
+.searchBar {
+  padding-left: 10px;
+  width: 50%;
+  height: 100%;
+  margin-top: 5px;
+  border-radius: 10px;
+  border: 0;
+  background-color: rgb(243, 233, 233);
+  outline: none;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.clip {
+  background-color: white;
+  width: 250px;
+  height: 340px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  transition: 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.clip:hover {
+  background-color: red;
+  transform: translate(10px, 5px);
+  box-shadow: -10px 0 10px grey;
+}
+
+.clip-div {
+  width: 250px;
+  height: 140px;
+  text-align: center;
+  align-items: center;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.link-container a {
+  color: black;
+  font-size: 15px;
+}
+
+.link-container a:hover {
+  color: blue;
+}
+
+.link-container {
+  position: relative;
+  background-color: rgba(251, 255, 0, 0.822);
+  padding: 10px;
+  z-index: 1;
+  top: -116px;
+  width: 92%;
+}
+
+.clip-description {
+  width: 220px;
+  font-size: 12px;
+  font-style: italic;
+  overflow: hidden;
+}
+
+.clip-img {
+  position: relative;
+  z-index: 0;
+  width: 250px;
+}
+
+.clip-info {
+  font-size: 15px;
+  margin-top: 30px;
+}
+
+.clip-info div {
+  text-align: center;
+  margin-bottom: 5px;
+  width: 210px;
+}
+
+.clip-icon {
+  width: 15px;
+  height: 15px;
+  float: left;
+}
+
+.pagesContainer {
+  margin-top: 60px;
+  text-align: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+.pages {
+  display: flex;
+  justify-content: center;
+}
+
+.nonactive-page, .active-page {
+  list-style: none;
+  margin-right: 7px;
+  width: 20px;
+  height: 20px;
+  border-radius: 15px;
+  font-size: 10px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.nonactive-page {
+  background-color: white;
+  border: 1.5px solid red;
+  color: transparent;
+}
+
+.nonactive-page:hover {
+  color: black;
+}
+
+.nonactive-page:active {
+  background-color: red;
+}
+
+.active-page {
+  background-color: red;
+  border: 1.5px solid white;
+  color: white;
+}
