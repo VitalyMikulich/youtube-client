@@ -33,7 +33,7 @@ async function renderClips(state, countOfClipsPerPage) {
 export default class App {
   constructor() {
     this.state = {
-      url: 'https://www.googleapis.com/youtube/v3/search?key=AIzaSyDR2fWz-wgcbfpdgHRTa9aNUytgutVga-w&type=video&part=snippet&maxResults=15&q=',
+      url: 'https://www.googleapis.com/youtube/v3/search?key=AIzaSyByXP7m96EEVAI2CpA8YsZ8zXnXcnagT6Y&type=video&part=snippet&maxResults=15&q=',
     };
   }
 
@@ -47,7 +47,7 @@ export default class App {
     else countOfClipsPerPage = 4;
     const form = document.getElementById('form');
     const input = document.getElementById('input');
-    const url = 'https://www.googleapis.com/youtube/v3/search?key=AIzaSyDR2fWz-wgcbfpdgHRTa9aNUytgutVga-w&type=video&part=snippet&maxResults=50&q=';
+    const url = 'https://www.googleapis.com/youtube/v3/search?key=AIzaSyByXP7m96EEVAI2CpA8YsZ8zXnXcnagT6Y&type=video&part=snippet&maxResults=50&q=';
     form.addEventListener('input', () => {
       this.state.url = url + input.value;
       renderClips(this.state, countOfClipsPerPage);

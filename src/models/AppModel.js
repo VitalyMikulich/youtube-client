@@ -15,7 +15,7 @@ export default class AppModel {
     const videoContainer = {
       videoUrl: '',
     };
-    videoContainer.videoUrl = `https://www.googleapis.com/youtube/v3/videos?key=AIzaSyDR2fWz-wgcbfpdgHRTa9aNUytgutVga-w&id=${videoIds}&part=snippet,statistics`;
+    videoContainer.videoUrl = `https://www.googleapis.com/youtube/v3/videos?key=AIzaSyByXP7m96EEVAI2CpA8YsZ8zXnXcnagT6Y&id=${videoIds}&part=snippet,statistics`;
     const viewsCount = new AppViewsCount(videoContainer);
     const videosInfo = await viewsCount.getClipsViewsCount();
     let page = 1;
